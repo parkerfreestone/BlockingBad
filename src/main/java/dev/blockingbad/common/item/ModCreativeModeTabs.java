@@ -1,6 +1,7 @@
-package dev.blockingbad.item;
+package dev.blockingbad.common.item;
 
 import dev.blockingbad.BlockingBad;
+import dev.blockingbad.init.ItemInit;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.CreativeModeTab;
@@ -18,7 +19,7 @@ public class ModCreativeModeTabs {
         BLOCKING_BAD_TAB = event.registerCreativeModeTab(
                 new ResourceLocation(BlockingBad.MODID, "blockingbad_tab"),
                 builder -> builder.icon(() ->
-                        new ItemStack(ModItems.COFFEE_FILTER.get())
+                        new ItemStack(ItemInit.COLD_MEDICINE_POWDER.get())
                 ).title(Component.translatable("creativemodetab.blockingbad_tab"))
         );
     }
